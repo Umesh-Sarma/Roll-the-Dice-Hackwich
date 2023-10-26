@@ -22,6 +22,7 @@ struct ContentView: View {
                 .font(.system(size: 72))
                 .padding()
                 .onTapGesture {
+                    chooseRandom(times: 3)
                     randomValue = Int.random(in: 1...6)
                     withAnimation(.interpolatingSpring(stiffness: 10, damping: 2)) {
 
